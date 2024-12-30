@@ -1,0 +1,359 @@
+@media (max-width: 1270px) {
+   .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 7.6%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+
+        border-right: 1px solid rgb(44, 44, 44);
+
+    }
+
+    .sidebar img:not(.explore-icon, .reels-icon, .like-icon-two) {
+        width: 25px;
+        height: 25px;
+
+        margin: 12px 14px;
+    }
+
+    .sidebar img:not(.like-icon-two, .account-picture) {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(140deg) brightness(108%) contrast(102%);
+    }
+    
+    .like-icon-two {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(140deg) brightness(108%) contrast(102%);
+    }
+
+
+    .instagram-link-two, 
+    [class*="text"] {
+        display: none;
+    }
+/* ------------------------------------------------------------------ */
+/* Sidebar top section */
+/* ------------------------------------------------------------------ */
+    .top-section {
+        padding: 22px 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 4px;
+    }
+
+    .top-section > *:not(.instagram-link) {
+        cursor: pointer;
+        border-radius: 10px;
+
+        transition: background-color 0.35s;
+    }
+    .top-section > *:hover:not(.instagram-link) {
+        background-color: rgb(27, 27, 27);
+    }
+    .top-section > *:active:not(.instagram-link) {
+        background-color: black;
+    }
+
+    .instagram-link {
+        cursor: pointer;
+    }
+
+
+    .home-link {
+        margin: 18px 0 0 0;
+    }
+
+    .explore-icon {
+        width: 32px;
+        height: 32px;
+
+        margin: 8px 11px 8px 10px;
+    }
+
+    .reels-icon {
+        width: 22px;
+        height: 22px;
+
+        margin: 14px 16px 14px 15px;
+    }
+
+
+    .message-link {
+        position: relative;
+    }
+
+    .message-count {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        background-color: red;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 50%;
+    }
+
+
+    .like-link {
+        position: relative;
+    }
+
+    .follow-count {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+
+        background-color: red;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 50%;
+    }
+
+    .like-icon-two {
+        width: 28px;
+        height: 28px;
+
+        margin: 14px 14px 10px 11px;
+    }
+
+    .account-picture {
+        border-radius: 50%;
+    }
+
+
+
+/* ------------------------------------------------------------------ */
+/* Sidebar bottom section */
+/* ------------------------------------------------------------------ */
+
+    .bottom-section {
+        padding: 0 0 20px 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 4px;
+    }
+
+    .bottom-section > * {
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .bottom-section > *:hover {
+        background-color: rgb(27, 27, 27);
+    }
+    .bottom-section > *:active {
+        background-color: black;
+    }
+
+
+    .threads-link {
+        position: relative;
+    }
+
+    .threads-count {
+        position: absolute;
+        top: 4px;
+        right: 5px;
+
+        background-color: red;
+        font-size: 12px;
+        padding: 3px 4px;
+        border-radius: 50%;
+    }
+}
+
+
+
+@media (min-width: 1270.1px) {
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 18%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+
+        border-right: 1px solid rgb(44, 44, 44);
+
+        z-index: 100;
+
+    }
+
+    .sidebar img:not(.instagram-text-icon, .explore-icon, .reels-icon, .like-icon-two) {
+        width: 25px;
+        height: 25px;
+
+        margin: 12px 14px;
+    }
+
+    .sidebar img:not(.like-icon-two, .account-picture) {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(140deg) brightness(108%) contrast(102%);
+    }
+    
+    .like-icon-two {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(140deg) brightness(108%) contrast(102%);
+    }
+
+
+/* ------------------------------------------------------------------ */
+/* Sidebar top section */
+/* ------------------------------------------------------------------ */
+    .instagram-link {
+        display: none;
+    }
+
+    .top-section {
+        padding: 34px 0 0 10px;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+    }
+
+    [class*="link"]:not(.instagram-link) {
+        display: flex;
+        align-items: center;
+
+        margin-right: 14px;
+    }
+
+    .top-section > *:not(.instagram-link-two) {
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 15px;
+
+        transition: background-color 0.35s;
+    }
+    .top-section > *:hover:not(.instagram-link-two) {
+        background-color: rgb(27, 27, 27);
+    }
+    .top-section > *:active:not(.instagram-link-two) {
+        background-color: black;
+    }
+
+
+    .instagram-text-icon {
+        width: 110px;
+        cursor: pointer;
+
+        margin: 0 0 0 10px;
+    }
+
+    .home-link {
+        margin: 25px 0 0 0;
+        font-weight: 500;
+    }
+
+    .explore-icon {
+        width: 32px;
+        height: 32px;
+
+        margin: 8px 11px 8px 10px;
+    }
+
+    .reels-icon {
+        width: 22px;
+        height: 22px;
+
+        margin: 14px 16px 14px 15px;
+    }
+
+
+    .message-link {
+        position: relative;
+    }
+
+    .message-count {
+        position: absolute;
+        top: 5px;
+        left: 30px;
+
+        background-color: red;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 50%;
+    }
+
+
+    .like-link {
+        position: relative;
+    }
+
+    .follow-count {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+
+        background-color: red;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 50%;
+    }
+
+    .like-icon-two {
+        width: 28px;
+        height: 28px;
+
+        margin: 14px 14px 10px 11px;
+    }
+
+    .account-picture {
+        border-radius: 50%;
+    }
+
+
+
+/* ------------------------------------------------------------------ */
+/* Sidebar bottom section */
+/* ------------------------------------------------------------------ */
+
+    .bottom-section {
+        padding: 0 0 20px 10px;
+
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        row-gap: 6px;
+    }
+
+    .bottom-section > * {
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .bottom-section > *:hover {
+        background-color: rgb(27, 27, 27);
+    }
+    .bottom-section > *:active {
+        background-color: black;
+    }
+
+
+    .threads-link {
+        position: relative;
+    }
+
+    .threads-count {
+        position: absolute;
+        top: 4px;
+        left: 26px;
+
+        background-color: red;
+        font-size: 12px;
+        padding: 3px 4px;
+        border-radius: 50%;
+    }
+}
